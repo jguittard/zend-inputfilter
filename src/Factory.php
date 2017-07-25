@@ -352,6 +352,7 @@ class Factory
                 // Remove name from specification. InputFilter doesn't have a
                 // name property!
                 unset($value['name']);
+                unset($value['type']);
             }
 
             $inputFilter->add($this->createInput($value), $key);
